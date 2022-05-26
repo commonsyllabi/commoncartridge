@@ -2,10 +2,7 @@ module github.com/commonsyllabi/commoncartridge
 
 go 1.18
 
-require (
-	github.com/commonsyllabi/viewer v0.0.0-20220526181553-26df3f9569ad
-	github.com/stretchr/testify v1.7.1
-)
+require github.com/stretchr/testify v1.7.1
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

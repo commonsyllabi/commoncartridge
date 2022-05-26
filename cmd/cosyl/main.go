@@ -8,7 +8,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/commonsyllabi/viewer/pkg/commoncartridge"
+	"github.com/commonsyllabi/commoncartridge"
 )
 
 var (
