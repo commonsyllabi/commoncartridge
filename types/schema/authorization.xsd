@@ -1,0 +1,35 @@
+<xs:schema targetNamespace="http://www.imsglobal.org/xsd/imsccauth_v1p0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://www.imsglobal.org/xsd/imsccauth_v1p0"
+    xmlns:ims="http://www.imsglobal.org/xsd/imscp_v1p1" elementFormDefault="unqualified">
+    <xs:import namespace="http://www.imsglobal.org/xsd/imscp_v1p1" schemaLocation =
+"imscp_v1p1.xsd"/>
+    <xs:element name="authorizations" type="authorizationsType"/>
+    <xs:complexType name="authorizationsType">
+        <xs:sequence>
+            <xs:element name="authorization" type="authorizationType"/>
+            <xs:group ref = "ims:grp.any"/>
+        </xs:sequence>
+        <xs:attribute name="access" type="accessType" use="required"/>
+        <xs:attribute name="import" type="xs:boolean" default="false"/>
+    </xs:complexType>
+    <xs:complexType name="authorizationType">
+        <xs:sequence>
+            <xs:element name="cartridgeId" type="xs:string"/>
+            <xs:element name="webservice" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="accessType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="cartridge"/>
+            <xs:enumeration value="resource"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="ResourceType">
+        <xs:complexContent>
+            <xs:extension base="ims:resourceType">
+                <xs:attribute name="protected" type="xs:boolean" default="false"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>

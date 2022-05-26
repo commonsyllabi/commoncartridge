@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assignment identifier="ie801a403cd25e9a771ab7e3a2d6bea3a" xmlns="http://www.imsglobal.org/xsd/imscc_extensions/assignment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscc_extensions/assignment http://www.imsglobal.org/profile/cc/cc_extensions/cc_extresource_assignmentv1p0_v1p0.xsd">
+  <title>Assignment</title>
+  <text texttype="text/html">Assignment description dolores sit amet</text>
+  <gradable points_possible="10">true</gradable>
+  <submission_formats>
+    <format type="html"/>
+    <format type="url"/>
+    <format type="file"/>
+  </submission_formats>
+</assignment>

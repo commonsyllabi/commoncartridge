@@ -1,0 +1,20 @@
+<resource identifier="I_00004_R" type="imsqti_xmlv1p2/imscc_xmlv1p1/question-bank" href="course_settings/bla.etc" intendeduse="syllabus">
+    <metadata>
+        <lom:lom>
+            <lom:educational>
+                <lom:intendedEndUserRole>
+                    <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+                    <lom:value>Instructor</lom:value>
+                </lom:intendedEndUserRole>
+            </lom:educational>
+        </lom:lom>
+    </metadata>
+    <file href="I_00001_R/assessment.xml"/>
+    <file href="I_00002_R/assessment.xml"/>
+    <file href="I_00003_R/assessment.xml"/>
+    <cpx:variant identifier="i9488305f6e295db041b524d94f68df40_variant" identifierref="i9488305f6e295db041b524d94f68df40">
+        <cpx:metadata/>
+    </cpx:variant>
+    <dependency identifierref="i9ba50710890a4ae937b5180e8b4f83b1"/>
+    <dependency identifierref="i9ba50710890a4ae937b5180e8b4f83b2"/>
+</resource>

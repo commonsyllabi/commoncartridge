@@ -1,0 +1,283 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns="http://www.imsglobal.org/xsd/imscc_extensions/assignment"
+     targetNamespace="http://www.imsglobal.org/xsd/imscc_extensions/assignment"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     version="IMS CC ASSIGNMENT 1.0"
+     elementFormDefault="qualified"
+     attributeFormDefault="unqualified">
+
+    <xs:annotation>
+        <xs:documentation>
+            XSD Data File Information
+            =========================
+            Author:         Bracken Mosbacker (Instructure, USA) and Colin Smythe (IMS Global, UK)
+            Date:           14th June, 2013
+            Version:        1.0
+            Status:         Provisional
+            Description:    This is the normative representation of the IMS Assignment Information Model for binding purposes. The PSM is used with the IMS Common Cartridge specification. The PSM defines the format of an Assignment resource supported by CCv1.3 and later versions.
+
+            History:        The original specification Final Release.
+
+            License:        IPR and Distribution Notices
+
+                            This machine readable file is derived from IMS Global specification IMS Common Cartridge (Assignment Extension Resource) Version 1.0
+                            found at http://www.imsglobal.org/cc and the original IMS Global schema binding or code base
+                            http://www.imsglobal.org/cc.
+
+                            Recipients of this document are requested to submit, with their comments, notification of any relevant 
+                            patent claims or other intellectual property rights of which they may be aware that might be infringed by
+                            any implementation of the specification set forth in this document, and to provide supporting documentation.
+
+                            IMS takes no position regarding the validity or scope of any intellectual property or other rights that might
+                            be claimed to pertain to the implementation or use of the technology described in this document or the extent 
+                            to which any license under such rights might or might not be available; neither does it represent that it has 
+                            made any effort to identify any such rights. Information on IMS procedures with respect to rights in IMS 
+                            specifications can be found at the IMS Global Intellectual Property Rights web page: http://www.imsglobal.org/ipr/imsipr_policyFinal.pdf.
+
+                            Copyright © IMS Global Learning Consortium 1999-2013. All Rights Reserved.
+
+                            Use of this specification to develop products or services is governed by the license with IMS found on the IMS website: http://www.imsglobal.org/license.html.
+
+                            Permission is granted to all parties to use excerpts from this document as needed in producing requests for proposals.
+
+                            The limited permissions granted above are perpetual and will not be revoked by IMS or its successors or assigns.
+
+                            THIS SPECIFICATION IS BEING OFFERED WITHOUT ANY WARRANTY WHATSOEVER, AND IN PARTICULAR, ANY WARRANTY OF NONINFRINGEMENT IS
+                            EXPRESSLY DISCLAIMED. ANY USE OF THIS SPECIFICATION SHALL BE MADE ENTIRELY AT THE IMPLEMENTERS OWN RISK, AND NEITHER THE CONSORTIUM
+                            NOR ANY OF ITS MEMBERS OR SUBMITTERS, SHALL HAVE ANY LIABILITY WHATSOEVER TO ANY IMPLEMENTER OR THIRD PARTY FOR ANY DAMAGES OF
+                            ANY NATURE WHATSOEVER, DIRECTLY OR INDIRECTLY, ARISING FROM THE USE OF THIS SPECIFICATION.
+
+            Source UML File Information
+            ===========================
+            The source file information must be supplied as an XMI file (without diagram layout information).
+            The supported UML authoring tools are:
+            (a) Poseidon - v6 (and later)
+            (b) Papyrus - v0.9.2 (and later)
+
+            Source XSLT File Information
+            ============================
+            XSL Generator:    Specificationv1p0_GenerationToolv1.xsl
+            XSLT Processor:   Saxon-PE-9.5.0.2
+            Release:          1.0
+            Date:             31st March, 2013
+            Autogen Engineer: Colin Smythe (IMS Global, UK)
+            Autogen Date:     2013-10-29
+
+            IMS Global Auto-generation Binding Tool-kit (I-BAT)
+            ===================================================
+            This file was auto-generated using the IMS Global Binding Auto-generation Tool-kit (I-BAT).  While every
+            attempt has been made to ensure that this tool auto-generates the files correctly, users should be aware
+            that this is an experimental tool.  Permission is given to make use of this tool.  IMS Global makes no
+            claim on the materials created by third party users of this tool.  Details on how to use this tool
+            are contained in the IMS Global "I-BAT" documentation available at the IMS Global web-site:
+            http://www.imsglobal.org.
+
+            Tool Copyright:  2012-2013  (c) IMS Global Learning Consortium Inc.  All Rights Reserved.
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- Generate Global Attributes (non-assigned) ******************************************************** -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate Global Attributes *********************************************************************** -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate Global List Types *********************************************************************** -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate Namespaced extension Group  ************************************************************* -->
+
+    <xs:group name="grpStrict.any">
+        <xs:annotation>
+            <xs:documentation>
+                Any namespaced element from any namespace may be included within an "any" element.
+                The namespace for the imported element must be defined in the instance, and the schema must be imported.
+                The extension has a definition of "strict" i.e. they must have their own namespace.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:any namespace = "##other" processContents = "strict" minOccurs = "0" maxOccurs = "unbounded" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate Special DataTypes  ********************************************************************** -->
+
+    <xs:complexType name="EmptyPrimitiveType.Type">
+        <xs:complexContent>
+            <xs:restriction base="xs:anyType" />
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate the enumerated simpleType declarations ************************************************** -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate the simpleType elements based on IMS data-types (Parameter) ***************************** -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate the simpleType elements based on IMS data-types (Derived) ******************************* -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate the simpleType elements based on IMS data-types (Union) ********************************* -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate the simpleType elements based on IMS data-types (Complex) ******************************* -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate the derived data-type elements based upon simpleType ************************************ -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate the derived data-type elements based upon derived simpleType **************************** -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate the ComplexTypes ************************************************************************ -->
+
+    <xs:complexType name="Assignment.Type" abstract="false" mixed="false">
+        <xs:annotation>
+            <xs:documentation source="documentation">
+                An Assignment is a simple object for exchanging assignments.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:all>
+            <xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1" />
+            <xs:element name="text" type="Text.Type" minOccurs="0" maxOccurs="1" />
+            <xs:element name="instructor_text" type="Text.Type" minOccurs="1" maxOccurs="1" />
+            <xs:element name="attachments" type="Attachments.Type" minOccurs="0" maxOccurs="1" />
+            <xs:element name="gradable" type="Gradable.Type" minOccurs="0" maxOccurs="1" />
+            <xs:element name="submission_formats" type="SubmissionFormats.Type" minOccurs="0" maxOccurs="1" />
+            <xs:element name="extensions" type="Extensions.Type" minOccurs="0" maxOccurs="1" />
+        </xs:all>
+        <xs:attribute name="identifier" use="optional" type="xs:ID" />
+    </xs:complexType>
+
+    <xs:complexType name="Attachments.Type" abstract="false" mixed="false">
+        <xs:annotation>
+            <xs:documentation source="documentation">
+                Attachments is the set of files associated with the assignment. Importing systems should handle role restrictions appropriately.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="attachment" type="Attachment.Type" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Extensions.Type" abstract="false" mixed="false">
+        <xs:annotation>
+            <xs:documentation source="documentation">
+                Extensions is the extra information for an assignment that cannot be captured by the current specification. An Assignment object should still be usable and meaningful if the provided extensions cannot be supported by importing systems.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:group ref="grpStrict.any" />
+        </xs:sequence>
+        <xs:attribute name="platform" use="optional" type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="SubmissionFormats.Type" abstract="false" mixed="false">
+        <xs:annotation>
+            <xs:documentation source="documentation">
+                Specifies the preferred format(s) for a solution to the assignment.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="format" type="Format.Type" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- ================================================================================================== -->
+
+    <!-- Generate the derived ComplexTypes **************************************************************** -->
+
+    <xs:complexType name="Attachment.Type" abstract="false" mixed="false">
+        <xs:complexContent>
+            <xs:extension base="EmptyPrimitiveType.Type">
+                <xs:attribute name="href" use="required" type="xs:anyURI" />
+                <xs:attribute name="role" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="All" />
+                            <xs:enumeration value="Learner" />
+                            <xs:enumeration value="Manager" />
+                            <xs:enumeration value="Instructor" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="Format.Type" abstract="false" mixed="false">
+        <xs:complexContent>
+            <xs:extension base="EmptyPrimitiveType.Type">
+                <xs:attribute name="type" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="text" />
+                            <xs:enumeration value="html" />
+                            <xs:enumeration value="url" />
+                            <xs:enumeration value="file" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="Gradable.Type" abstract="false" mixed="false">
+        <xs:simpleContent>
+            <xs:extension base="xs:boolean">
+                <xs:attribute name="points_possible" use="optional" type="xs:float" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="Text.Type" abstract="false" mixed="false">
+        <xs:annotation>
+            <xs:documentation source="documentation">
+                This is the explanatory text for the assignment.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="texttype" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="text/plain" />
+                            <xs:enumeration value="text/html" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- ================================================================================================== -->
+
+    <!-- Declaration of the elements (Complex) ************************************************************ -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Declaration of the elements (Derived) ************************************************************ -->
+
+    <!-- ================================================================================================== -->
+
+    <!-- Declaration of the root element(s) *************************************************************** -->
+
+    <xs:element name="assignment" type="Assignment.Type" />
+
+    <!-- ================================================================================================== -->
+
+</xs:schema>

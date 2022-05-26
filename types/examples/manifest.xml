@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="cctd0001"
+    xmlns="http://www.imsglobal.org/xsd/imsccv1p1/imscp_v1p1"
+    xmlns:lom="http://ltsc.ieee.org/xsd/imsccv1p1/LOM/resource"
+    xmlns:lomimscc="http://ltsc.ieee.org/xsd/imsccv1p1/LOM/manifest"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.imsglobal.org/xsd/imsccv1p1/imscp_v1p1
+http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_imscp_v1p1_v1p0.xsd
+http://ltsc.ieee.org/xsd/imsccv1p1/LOM/resource
+http://www.imsglobal.org/profile/cc/ccv1p1/LOM/ccv1p1_lomresource_v1p0.xsd
+http://ltsc.ieee.org/xsd/imsccv1p1/LOM/manifest
+http://www.imsglobal.org/profile/cc/ccv1p1/LOM/ccv1p1_lommanifest_v1p0.xsd">
+    <metadata>
+        <schema>IMS Common Cartridge</schema>
+        <schemaversion>1.1.0</schemaversion>
+        <lomimscc:lom>
+            <lomimscc:general>
+                <lomimscc:title>
+                    <lomimscc:string language="en-US">Common Cartridge Test Data Set - Validation Cartridge
+1</lomimscc:string>
+                </lomimscc:title>
+                <imsmd:language>en-US</imsmd:language>
+                <lomimscc:description>
+                    <lomimscc:string language="en-US">Sample materials to test a variety of Common Cartridge content types</lomimscc:string>
+                </lomimscc:description>
+                <lomimscc:keyword>
+                    <lomimscc:string language="en-US">Sample</lomimscc:string>
+                </lomimscc:keyword>
+            </lomimscc:general>
+            <lomimscc:lifeCycle>
+                <lomimscc:contribute>
+                    <lomimscc:date>
+                        <lomimscc:dateTime>2015-03-29</lomimscc:dateTime>
+                    </lomimscc:date>
+                    <lomimscc:entity>
+                        <lomimscc:string>Default Name</lomimscc:string>
+                    </lomimscc:entity>
+                    <lomimscc:role>
+                        <lomimscc:string>Default Adjunct</lomimscc:string>
+                    </lomimscc:role>
+                </lomimscc:contribute>
+            </lomimscc:lifeCycle>
+            <lomimscc:rights>
+                <lomimscc:copyrightAndOtherRestrictions>
+                    <lomimscc:value>yes</lomimscc:value>
+                </lomimscc:copyrightAndOtherRestrictions>
+                <lomimscc:description>
+                    <lomimscc:string>CC Attribution Non-Commercial Share Alike - http://creativecommons.org/licenses/by-nc-sa/4.0</lomimscc:string>
+                </lomimscc:description>
+            </lomimscc:rights>
+        </lomimscc:lom>
+    </metadata>
+    <organizations>
+        <organization identifier="O_1" structure="rooted-hierarchy">
+            <item identifier="I_1">
+                <item identifier="I_00000">
+                    <title>Psychology, Research, and You</title>
+                    <item identifier="I_00001" identifierref="I_00001_R">
+                        <title>Learning Objectives</title>
+                    </item>
+                    <item identifier="I_00002">
+                        <title>Study Guide</title>
+                        <item identifier="I_00003" identifierref="I_00003_R">
+                            <title>Pretest</title>
+                        </item>
+                    </item>
+                    <item identifier="I_00005" identifierref="I_00005_R">
+                        <title>Wikipedia - Psychology</title>
+                    </item>
+                    <item identifier="I_00006" identifierref="I_00006_R">
+                        <title>Psychology of Faces</title>
+                    </item>
+                </item>
+            </item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource href="I_00001_R/Learning_Objectives.html" identifier="I_00001_R" type="webcontent">
+            <file href="I_00001_R/Learning_Objectives.html"/>
+        </resource>
+        <resource identifier="I_00003_R" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+            <file href="I_00003_R/assessment.xml"/>
+        </resource>
+        <resource identifier="I_00004_R" type="imsqti_xmlv1p2/imscc_xmlv1p1/question-bank">
+            <metadata>
+                <lom:lom>
+                    <lom:educational>
+                        <lom:intendedEndUserRole>
+                            <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+                            <lom:value>Instructor</lom:value>
+                        </lom:intendedEndUserRole>
+                    </lom:educational>
+                </lom:lom>
+            </metadata>
+            <file href="I_00004_R/assessment.xml"/>
+        </resource>
+        <resource identifier="I_00005_R" type="imswl_xmlv1p1">
+            <file href="I_00005_R/weblink1.xml"/>
+        </resource>
+        <resource identifier="I_00006_R" type="imsdt_xmlv1p1">
+            <file href="I_00006_R/discussion.xml"/>
+            <dependency identifierref="I_00006_Media"/>
+            <dependency identifierref="I_media_R"/>
+        </resource>
+        <resource identifier="I_00006_Media" type="associatedcontent/imscc_xmlv1p1/learning-
+application-resource">
+            <file href="I_00006_Media/angry_person.jpg"/>
+        </resource>
+        <resource identifier="I_media_R" type="webcontent">
+            <file href="I_media_R/smiling_dog.jpg"/>
+        </resource>
+    </resources>
+</manifest>

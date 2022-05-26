@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema targetNamespace="http://www.imsglobal.org/xsd/imsccv1p1/imswl_v1p1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="
+http://www.imsglobal.org/xsd/imsccv1p1/imswl_v1p1
+http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_imswl_v1p1.xsd" elementFormDefault="unqualified">
+    <xs:element name="webLink" type="webLinkType"/>
+    <xs:complexType name="webLinkType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="url">
+                <xs:complexType>
+                    <xs:attribute name="href" type="xs:string" use="required"/>
+                    <xs:attribute name="target" type="xs:string" />
+                    <xs:attribute name="windowFeatures" type="xs:string" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
