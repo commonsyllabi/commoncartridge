@@ -53,6 +53,8 @@ func main(){
 
 ```
 
+Find the full documentation for the package at [pkg.go.dev/github.com/commonsyllabi/commoncartridge](https://pkg.go.dev/github.com/commonsyllabi/commoncartridge)
+
 ## Alternatives
 
 - [github.com/AndcultureCode/Common-Cartridge](https://github.com/AndcultureCode/Common-Cartridge/), written in C#, seemingly unmaintained.
