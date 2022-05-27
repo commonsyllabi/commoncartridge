@@ -44,11 +44,11 @@ func main(){
 
     // prints the JSON representation of the cartridge
     obj, err := cc.MarshalJSON()
-		if err != nil {
-			log.Fatal(err)
-		}
+    if err != nil {
+        log.Fatal(err)
+    }
 
-	fmt.Print(string(obj))
+    fmt.Print(string(obj))
 }
 
 ```
