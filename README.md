@@ -6,6 +6,8 @@ Package for parsing IMSCC-compliant files. A [CommonCartridge](https://www.imsgl
 
 This package allows you to inspect and access specific parts of the cartridge, either through a command-line interface provided, or through a web interface accessible at [viewer.commonsyllabi.org](https://viewer.commonsyllabi.org).
 
+Find the full documentation for the package at [pkg.go.dev/github.com/commonsyllabi/commoncartridge](https://pkg.go.dev/github.com/commonsyllabi/commoncartridge).
+
 ## Installation
 
 ```
@@ -44,11 +46,11 @@ func main(){
 
     // prints the JSON representation of the cartridge
     obj, err := cc.MarshalJSON()
-		if err != nil {
-			log.Fatal(err)
-		}
+    if err != nil {
+        log.Fatal(err)
+    }
 
-	fmt.Print(string(obj))
+    fmt.Print(string(obj))
 }
 
 ```
