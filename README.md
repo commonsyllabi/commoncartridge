@@ -53,6 +53,12 @@ func main(){
 
 ```
 
+## Note on generating IMSCC structs
+
+Due to the naming complications of the official XSD files and the exorbitant costs of IMSCC resources in terms of test files and validator software, the IMSCC structs are generated from the sample `.xml` files in `types/examples`, using [zek](https://github.com/miku/zek). You can regenerate the structs by running `go generate ./...` from the root folder.
+
+__NOTE__: the current version of zek does not allow for the generation of non-nested structs ([#14](https://github.com/miku/zek/issues/14)). Please see [this fork](https://github.com/periode/zek) for a working version.
+
 ## Alternatives
 
 - [github.com/AndcultureCode/Common-Cartridge](https://github.com/AndcultureCode/Common-Cartridge/), written in C#, seemingly unmaintained.
